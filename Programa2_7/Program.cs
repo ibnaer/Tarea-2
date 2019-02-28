@@ -62,8 +62,20 @@ namespace Programa2_7
             "El mejor dado es de color {0} y tiene el numero {1}"+
             "-------------------------------------------------",color,valor);
         }
+         public void mejordadoigual()
+        {
+            Console.WriteLine("------------------------------------------------"+
+            "Existen dos mejores dados con el numero {0}"+
+            "-------------------------------------------------",valor);
+        }
 
-    }
+          public void imprimedadosiguales()
+        {
+            Console.WriteLine("------------------------------------------------"
+            +"Todos los dados son iguales y tienen el numero {0}"+
+            "------------------------------------------------",valor);
+        }
+
 
     class Program
     {
@@ -80,22 +92,49 @@ namespace Programa2_7
             b.imprimedado();
             c.imprimedado();
 
-            if(a<b && c<b)
+            if (a==b && a == c)
             {
-                b.mejordado();
+                a.imprimedadosiguales(); 
             }
             else
             {
-                if(a>b && a>c)
+                if (a>b && a > c)
                 {
                     a.mejordado();
                 }
                 else
                 {
-                    c.mejordado();
+                    if (b > a && b > c)
+                    {
+                        b.mejordado();
+                    }
+                    else
+                    {
+                        if (c > a && c > b)
+                        {
+                            c.mejordado();
+                        }
+                        else
+                        {
+                            if (a == b || a == c)
+                            {
+                                a.mejordadoigual();
+                            }
+                            else
+                            {
+                                if (b == c)
+                                {
+                                    b.mejordadoigual();
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
         }
     }
+
 }
+}
+
