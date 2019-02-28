@@ -88,11 +88,11 @@ namespace Programa2_7
             Dado b = new Dado(random.Next(1, 6), ("Rojo"));
             Dado c = new Dado(random.Next(1, 6), ("Negro"));
 
-            a.imprimedado();
+            a.imprimedado(); //Imprimir los dados para saber su color y su numero
             b.imprimedado();
             c.imprimedado();
 
-            if (a==b && a == c)
+            if (a==b && a == c) //Condiciones correspondientes y metodos para imprimir de manera correcta.
             {
                 a.imprimedadosiguales(); 
             }
