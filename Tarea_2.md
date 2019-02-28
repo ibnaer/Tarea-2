@@ -14,7 +14,7 @@
  Una declaración de clase o estructura es como un plano que se utiliza para crear instancias u objetos en tiempo de ejecución. Si define una clase o estructura llamada **Person**, **Person** es el nombre del tipo. Si declara e inicializa una ***variable p*** de tipo **Person**, se dice que *p* es un ***objeto o instancia de Person***.
 
 ```c#
-Class Person //Clase Persona
+class Person //Clase Persona
     {
         string p; //Atributo *P* de Clase Persona
     }
@@ -57,7 +57,7 @@ public abstract double GetVelocidadMax(;
 Se usa para crear objetos e invocar constructores.
 
 ```c#
-    Class1 obj  = new Class1();
+    class1 obj  = new Class1();
 ```
 
 También se usa para crear instancias de tipos anónimos:
@@ -206,8 +206,11 @@ En la firma del método. Por ejemplo, en la firma de método siguiente se indica
 
 ```C#
 public ref decimal GetCurrentPrice()
+
 ```
 
 ***
+
+
 
 #### Sobrecarga de operadores: Concepto y utilidad, operadores unarios y binarios
